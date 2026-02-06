@@ -1,5 +1,6 @@
-/**
- * @TODO: Refactor README.md
- * * Current status: Placeholder
- * Plan: I will add this feature later and make it better.
- */
+```yaml
+profile_config:
+  bio: "pending"
+  readme:
+    status: "wip"
+    note: "will add this feature later and make it better"
