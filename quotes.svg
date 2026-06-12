@@ -1,0 +1,75 @@
+<svg width="680" height="180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&amp;display=swap');
+
+      .bg { fill: #0d1117; }
+      .border { fill: none; stroke: #30363d; stroke-width: 0.5; }
+      .quote { 
+        font-family: 'Georgia', serif; 
+        font-style: italic; 
+        font-size: 15px; 
+        fill: #e6edf3;
+      }
+      .attr { 
+        font-family: 'Georgia', serif; 
+        font-size: 12px; 
+        fill: #8b949e;
+      }
+      .accent { fill: none; stroke: #30363d; stroke-width: 2; }
+
+      .q1 { animation: fade 50s infinite 0s; }
+      .q2 { animation: fade 50s infinite 10s; }
+      .q3 { animation: fade 50s infinite 20s; }
+      .q4 { animation: fade 50s infinite 30s; }
+      .q5 { animation: fade 50s infinite 40s; }
+
+      @keyframes fade {
+        0%   { opacity: 0; }
+        4%   { opacity: 1; }
+        16%  { opacity: 1; }
+        20%  { opacity: 0; }
+        100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="680" height="180" rx="8" class="bg"/>
+  <rect width="680" height="180" rx="8" class="border"/>
+  <line x1="32" y1="30" x2="32" y2="150" class="accent"/>
+
+  <!-- Quote 1 -->
+  <g class="q1">
+    <text x="52" y="72" class="quote">"The night is long and full of code."</text>
+    <text x="52" y="100" class="attr">— Aditya Mishra, every sprint</text>
+  </g>
+
+  <!-- Quote 2 -->
+  <g class="q2">
+    <text x="52" y="65" class="quote">"A man without fear</text>
+    <text x="52" y="88" class="quote">cannot be wise."</text>
+    <text x="52" y="114" class="attr">— Old Norse Proverb</text>
+  </g>
+
+  <!-- Quote 3 -->
+  <g class="q3">
+    <text x="52" y="65" class="quote">"Thou shalt not build</text>
+    <text x="52" y="88" class="quote">what thou canst not debug."</text>
+    <text x="52" y="114" class="attr">— The Ancient Laws of Engineering</text>
+  </g>
+
+  <!-- Quote 4 -->
+  <g class="q4">
+    <text x="52" y="65" class="quote">"Persevere. The wheel of fortune turns,</text>
+    <text x="52" y="88" class="quote">and the knave becomes a king."</text>
+    <text x="52" y="114" class="attr">— Medieval English Saying</text>
+  </g>
+
+  <!-- Quote 5 -->
+  <g class="q5">
+    <text x="52" y="65" class="quote">"I have lived my life as best I could,</text>
+    <text x="52" y="88" class="quote">not knowing its purpose."</text>
+    <text x="52" y="114" class="attr">— Altaïr Ibn-La'Ahad, Assassin's Creed</text>
+  </g>
+
+</svg>
