@@ -1,75 +1,140 @@
-<svg width="680" height="180" xmlns="http://www.w3.org/2000/svg">
+<svg width="680" height="220" viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aditya Mishra banner card with rotating medieval and video game quotes">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;family=IM+Fell+English:ital@0;1&amp;display=swap');
 
-      .bg { fill: #0d1117; }
-      .border { fill: none; stroke: #30363d; stroke-width: 0.5; }
-      .quote { 
-        font-family: 'Georgia', serif; 
-        font-style: italic; 
-        font-size: 15px; 
-        fill: #e6edf3;
+      .name {
+        font-family: 'UnifrakturMaguntia', 'Georgia', serif;
+        font-size: 52px; fill: #ececec; letter-spacing: 2px;
       }
-      .attr { 
-        font-family: 'Georgia', serif; 
-        font-size: 12px; 
-        fill: #8b949e;
+      .sub {
+        font-family: 'IM Fell English', 'Georgia', serif;
+        font-style: italic; font-size: 13px; fill: #9a9a9a; letter-spacing: 1.5px;
       }
-      .accent { fill: none; stroke: #30363d; stroke-width: 2; }
+      .quote-text {
+        font-family: 'IM Fell English', 'Georgia', serif;
+        font-style: italic; font-size: 16px; fill: #d8d8d8;
+      }
+      .quote-attr {
+        font-family: 'IM Fell English', 'Georgia', serif;
+        font-size: 12px; fill: #7a7a7a; letter-spacing: 0.5px;
+      }
 
-      .q1 { animation: fade 50s infinite 0s; }
-      .q2 { animation: fade 50s infinite 10s; }
-      .q3 { animation: fade 50s infinite 20s; }
-      .q4 { animation: fade 50s infinite 30s; }
-      .q5 { animation: fade 50s infinite 40s; }
+      .ink   { stroke: #cfcfcf; fill: none; }
+      .ink-d { stroke: #6f6f6f; fill: none; }
+      .bar   { fill: #cfcfcf; opacity: 0.45; }
+      .orn   { stroke: #b8b8b8; fill: none; stroke-width: 1; }
 
-      @keyframes fade {
-        0%   { opacity: 0; }
-        4%   { opacity: 1; }
-        16%  { opacity: 1; }
-        20%  { opacity: 0; }
-        100% { opacity: 0; }
+      .q { opacity: 0; }
+      .q1 { animation: glide 42s infinite  0s; }
+      .q2 { animation: glide 42s infinite  6s; }
+      .q3 { animation: glide 42s infinite 12s; }
+      .q4 { animation: glide 42s infinite 18s; }
+      .q5 { animation: glide 42s infinite 24s; }
+      .q6 { animation: glide 42s infinite 30s; }
+      .q7 { animation: glide 42s infinite 36s; }
+
+      @keyframes glide {
+        0%    { opacity: 0; transform: translateY(6px); }
+        2%    { opacity: 1; transform: translateY(0); }
+        12%   { opacity: 1; transform: translateY(0); }
+        14.3% { opacity: 0; transform: translateY(-4px); }
+        100%  { opacity: 0; transform: translateY(-4px); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .q1 { opacity: 1; animation: none; }
+        .q2,.q3,.q4,.q5,.q6,.q7 { display: none; }
       }
     </style>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#181818"/>
+      <stop offset="100%" stop-color="#0e0e0e"/>
+    </linearGradient>
+
+    <!-- fleur-de-lis, centered at 0,0 -->
+    <g id="fleur" class="orn" stroke-width="1">
+      <path d="M0,-13 C -3,-6 -3,-2 0,2 C 3,-2 3,-6 0,-13 Z"/>
+      <path d="M0,2 C -7,-5 -12,0 -8,6 C -5,9 -2,6 0,2 Z"/>
+      <path d="M0,2 C 7,-5 12,0 8,6 C 5,9 2,6 0,2 Z"/>
+      <line x1="-8" y1="5" x2="8" y2="5"/>
+      <path d="M0,2 L0,12 M-4,12 L4,12"/>
+    </g>
   </defs>
 
-  <rect width="680" height="180" rx="8" class="bg"/>
-  <rect width="680" height="180" rx="8" class="border"/>
-  <line x1="32" y1="30" x2="32" y2="150" class="accent"/>
+  <!-- ground + engraving border -->
+  <rect width="680" height="220" fill="url(#bg)"/>
+  <rect x="7"  y="7"  width="666" height="206" class="ink"   stroke-width="1" opacity="0.35"/>
+  <rect x="13" y="13" width="654" height="194" class="ink-d" stroke-width="1" opacity="0.30"/>
 
-  <!-- Quote 1 -->
-  <g class="q1">
-    <text x="52" y="72" class="quote">"The night is long and full of code."</text>
-    <text x="52" y="100" class="attr">— Aditya Mishra, every sprint</text>
+  <!-- fleur-de-lis corners -->
+  <use href="#fleur" transform="translate(30,32)  scale(0.85)" opacity="0.5"/>
+  <use href="#fleur" transform="translate(650,32) scale(0.85)" opacity="0.5"/>
+  <use href="#fleur" transform="translate(30,190) scale(0.85)" opacity="0.45"/>
+  <use href="#fleur" transform="translate(650,190) scale(0.85)" opacity="0.45"/>
+
+  <!-- header -->
+  <text x="48" y="74" class="name">Aditya Mishra</text>
+  <text x="50" y="98" class="sub">Engineer · CleverTap</text>
+
+  <!-- ornamental divider with knightly sword centerpiece -->
+  <line x1="48"  y1="118" x2="316" y2="118" class="ink" stroke-width="1" opacity="0.4"/>
+  <line x1="364" y1="118" x2="632" y2="118" class="ink" stroke-width="1" opacity="0.4"/>
+  <path d="M312 118 q -8 0 -12 -4" class="orn" opacity="0.7"/>
+  <path d="M368 118 q 8 0 12 -4"  class="orn" opacity="0.7"/>
+  <g class="orn" stroke-width="1.2" opacity="0.85">
+    <circle cx="340" cy="105" r="2.6"/>
+    <line x1="340" y1="107" x2="340" y2="111"/>
+    <line x1="329" y1="111" x2="351" y2="111"/>
+    <line x1="340" y1="111" x2="340" y2="129"/>
+    <path d="M337 129 L340 134 L343 129 Z" fill="#b8b8b8" stroke="none"/>
   </g>
 
-  <!-- Quote 2 -->
-  <g class="q2">
-    <text x="52" y="65" class="quote">"A man without fear</text>
-    <text x="52" y="88" class="quote">cannot be wise."</text>
-    <text x="52" y="114" class="attr">— Old Norse Proverb</text>
+  <!-- quote band -->
+  <rect x="48" y="132" width="2" height="54" class="bar"/>
+
+  <!-- 1) Assassin's Creed -->
+  <g class="q q1">
+    <text x="64" y="156" class="quote-text">"Nothing is true, everything is permitted."</text>
+    <text x="64" y="180" class="quote-attr">— The Creed, Assassin's Creed</text>
   </g>
 
-  <!-- Quote 3 -->
-  <g class="q3">
-    <text x="52" y="65" class="quote">"Thou shalt not build</text>
-    <text x="52" y="88" class="quote">what thou canst not debug."</text>
-    <text x="52" y="114" class="attr">— The Ancient Laws of Engineering</text>
+  <!-- 2) Fallout -->
+  <g class="q q2">
+    <text x="64" y="156" class="quote-text">"War. War never changes."</text>
+    <text x="64" y="180" class="quote-attr">— Fallout</text>
   </g>
 
-  <!-- Quote 4 -->
-  <g class="q4">
-    <text x="52" y="65" class="quote">"Persevere. The wheel of fortune turns,</text>
-    <text x="52" y="88" class="quote">and the knave becomes a king."</text>
-    <text x="52" y="114" class="attr">— Medieval English Saying</text>
+  <!-- 3) BioShock -->
+  <g class="q q3">
+    <text x="64" y="156" class="quote-text">"A man chooses, a slave obeys."</text>
+    <text x="64" y="180" class="quote-attr">— Andrew Ryan, BioShock</text>
   </g>
 
-  <!-- Quote 5 -->
-  <g class="q5">
-    <text x="52" y="65" class="quote">"I have lived my life as best I could,</text>
-    <text x="52" y="88" class="quote">not knowing its purpose."</text>
-    <text x="52" y="114" class="attr">— Altaïr Ibn-La'Ahad, Assassin's Creed</text>
+  <!-- 4) Half-Life 2 -->
+  <g class="q q4">
+    <text x="64" y="149" class="quote-text">"The right man in the wrong place can make</text>
+    <text x="64" y="170" class="quote-text">all the difference in the world."</text>
+    <text x="64" y="190" class="quote-attr">— The G-Man, Half-Life 2</text>
   </g>
 
+  <!-- 5) The Legend of Zelda -->
+  <g class="q q5">
+    <text x="64" y="156" class="quote-text">"It's dangerous to go alone. Take this."</text>
+    <text x="64" y="180" class="quote-attr">— The Old Man, The Legend of Zelda</text>
+  </g>
+
+  <!-- 6) Chaucer, Wheel of Fortune -->
+  <g class="q q6">
+    <text x="64" y="149" class="quote-text">"Thus Fortune turns her wheel as she will,</text>
+    <text x="64" y="170" class="quote-text">and out of joy she brings men to sorrow."</text>
+    <text x="64" y="190" class="quote-attr">— Geoffrey Chaucer, The Canterbury Tales</text>
+  </g>
+
+  <!-- 7) Geoffroi de Charny -->
+  <g class="q q7">
+    <text x="64" y="149" class="quote-text">"The man of worth fears not to die,</text>
+    <text x="64" y="170" class="quote-text">if his life be good enough to die with honour."</text>
+    <text x="64" y="190" class="quote-attr">— Geoffroi de Charny, Book of Chivalry</text>
+  </g>
 </svg>
