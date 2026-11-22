@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/dialog.svg" alt="aditya.exe is not responding. last seen saying 'this'll take 5 minutes' four hours ago." width="440">
+  <a href="https://open.spotify.com/playlist/342zAt9ntbIg5CxS7qma0p"><img src="./assets/dialog.svg" alt="aditya.exe is not responding. last seen saying 'this'll take 5 minutes' four hours ago." width="440"></a>
 </p>
 
 <p align="center">
