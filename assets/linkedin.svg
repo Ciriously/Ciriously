@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="62" viewBox="0 0 104 62" font-family="Tahoma, Verdana, 'Segoe UI', sans-serif">
+  <path d="M40.5 6.5h16l8 8v24h-24z" fill="#fff" stroke="#000"/>
+  <path d="M56.5 6.5v8h8" fill="#c0c0c0" stroke="#000"/>
+  <g fill="#808080" shape-rendering="crispEdges">
+    <rect x="44" y="18" width="16" height="1"/><rect x="44" y="22" width="16" height="1"/>
+    <rect x="44" y="26" width="16" height="1"/><rect x="44" y="30" width="10" height="1"/>
+  </g>
+  <rect x="36.5" y="27.5" width="12" height="12" fill="#fff" stroke="#000" shape-rendering="crispEdges"/>
+  <path d="M39.5 37c0-3.5 2-5 5.5-5m-2.2-2.3L45 32l-2.2 2.3" fill="none" stroke="#000" stroke-width="1.4"/>
+  <rect x="10" y="44" width="84" height="16" fill="#000080" shape-rendering="crispEdges"/>
+  <text x="52" y="56" font-size="11" fill="#fff" text-anchor="middle">linkedin.lnk</text>
+</svg>

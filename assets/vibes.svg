@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="62" viewBox="0 0 104 62" font-family="Tahoma, Verdana, 'Segoe UI', sans-serif">
+  <circle cx="52" cy="22" r="16" fill="#e4e4e4" stroke="#000"/>
+  <path d="M52 22L40 10A16 16 0 0 1 58 7.2z" fill="#a8e6ff" opacity=".8"/>
+  <path d="M52 22L64 34A16 16 0 0 1 46 36.8z" fill="#ffc6f2" opacity=".8"/>
+  <path d="M52 22L67 19A16 16 0 0 1 64 34z" fill="#fff5a8" opacity=".8"/>
+  <circle cx="52" cy="22" r="5.5" fill="#c0c0c0" stroke="#808080"/>
+  <circle cx="52" cy="22" r="2" fill="#fff" stroke="#000"/>
+  <rect x="20" y="44" width="64" height="16" fill="#000080" shape-rendering="crispEdges"/>
+  <text x="52" y="56" font-size="11" fill="#fff" text-anchor="middle">vibes.m3u</text>
+</svg>
